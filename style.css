@@ -1,0 +1,64 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 5vw;
+            background-color: rgb(42, 92, 156);
+        }
+
+        .option-container {
+            max-width: 300px;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            padding: 20px;
+            padding-right: 30%;
+            padding: 2vw 9vw 2vw 9vw;
+            border-radius: 1vw;
+            margin-bottom: 20px;
+            font-size: 1vw;
+            background-color: #fff;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            border: 1px solid #ddd;
+            padding: 2%;
+            border-radius: 4px;
+            width: 150% auto;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 2%;
+        }
+
+        input[type="submit"] {
+            background-color: rgb(42, 92, 156);
+            color: white;
+            padding: 0.5vw 4vw 0.5vw 4vw;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #7e6ed4;
+        }
+
+        .result-paragraph {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        h2 {
+            margin-bottom:0.5vw;
+            font-size: 1vw;
+        }
+
+        @media screen and (max-width: 600px) {
+            form {
+                max-width: 100%;
+            }
+        }

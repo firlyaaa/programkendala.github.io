@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox dengan Paragraf</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <div class="option-container">
+        <h2>KENDALA :</h2>
+
+        <form id="checkboxForm1">
+            <label for="checkbox1">
+                <input type="checkbox" id="checkbox1"> Deadline Waktu tugas
+            </label>
+
+            <label for="checkbox2">
+                <input type="checkbox" id="checkbox3"> Kurang pemahaman 
+            </label>
+
+            <label for="checkbox3">
+                <input type="checkbox" id="checkbox4"> Memahami client
+            </label>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <p class="result-paragraph" id="resultParagraph1">Hasil: </p>
+    </div>
+
+    <div class="option-container">
+        <h2>SOLUSI :</h2>
+
+        <form id="checkboxForm2">
+            <label for="checkbox2">
+                <input type="checkbox" id="checkbox2"> Deadline Waktu tugas
+            </label>
+
+            <label for="checkbox5">
+                <input type="checkbox" id="checkbox5"> Kurang pemahaman 
+            </label>
+
+            <label for="checkbox6">
+                <input type="checkbox" id="checkbox6"> Memahami client
+            </label>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <p class="result-paragraph" id="resultParagraph2">Hasil: </p>
+    </div>
+
+    <script>
+        function updateParagraph(formId, resultParagraphId, checkboxId) {
+            var resultParagraph = document.getElementById(resultParagraphId);
+            var checkbox = document.getElementById(checkboxId);
+
+            // Reset nilai paragraf
+            resultParagraph.innerHTML = "Hasil: ";
+
+            // Periksa apakah checkbox terpilih
+            if (checkbox1.checked) {
+                resultParagraph.innerHTML += "1. Batas waktu yang terbatas setiap pengerjaan tugas tugas yang diberikan. ";
+            }
+            if (checkbox2.checked) {
+                resultParagraph.innerHTML += "1. Dengan membuat jadwal pekerjaan dan mengatur time management saat mengerjakan tugas. ";
+            }
+            if (checkbox3.checked) {
+                resultParagraph.innerHTML += "2.  Kurangnya pemahaman secara mendalam terhadap materi pembuatan game, website, dan aplikasi ";
+            }
+            if (checkbox4.checked) {
+                resultParagraph.innerHTML += "3. Karena setiap klien selalu memiliki keinginan yang berbeda dalam cara pengerjaan tugasnya ";
+            }
+            if (checkbox5.checked) {
+                resultParagraph.innerHTML += "2. Terus belajar materi materi yang tidak dimengerti, terkait dengan project/ pekerjaan yang sedang dikerjakan. ";
+            }
+            if (checkbox6.checked) {
+                resultParagraph.innerHTML += "3. Selalu belajar memahami keinginan client yang berbeda agar hasil pekerjaan sesuai dengan yang diinginkan client. ";
+            }
+        }
+
+        document.getElementById("checkboxForm1").addEventListener("submit", function(event) {
+            event.preventDefault();
+            updateParagraph("checkboxForm1", "resultParagraph1", "checkbox1");
+        });
+
+        document.getElementById("checkboxForm2").addEventListener("submit", function(event) {
+            event.preventDefault();
+            updateParagraph("checkboxForm2", "resultParagraph2", "checkbox2");
+        });
+
+        document.getElementById("checkboxForm3").addEventListener("submit", function(event) {
+            event.preventDefault();
+            updateParagraph("checkboxForm2", "resultParagraph2", "checkbox2");
+        });
+
+        document.getElementById("checkboxForm4").addEventListener("submit", function(event) {
+            event.preventDefault();
+            updateParagraph("checkboxForm2", "resultParagraph2", "checkbox2");
+        });
+
+        document.getElementById("checkboxForm5").addEventListener("submit", function(event) {
+            event.preventDefault();
+            updateParagraph("checkboxForm2", "resultParagraph2", "checkbox2");
+        });
+
+        document.getElementById("checkboxForm6").addEventListener("submit", function(event) {
+            event.preventDefault();
+            updateParagraph("checkboxForm2", "resultParagraph2", "checkbox2");
+        });
+    </script>
+
+</body>
+</html>
